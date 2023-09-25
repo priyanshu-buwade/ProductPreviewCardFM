@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    line-height: 1;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+}
+
+.layout {
+    background: hsl(0, 0%, 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-section {
+    height: 450px;
+    width: 300px;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.description {
+    height: 450px;
+    width: 240px;
+    padding: 0 30px;
+}
+
+#perfume {
+    margin-top: 30px;
+    letter-spacing: 3px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.price h1 {
+    color: hsl(158, 36%, 37%);
+}
+
+.price p {
+    text-decoration: line-through;
+}
+
+.button {
+    width: 100%;
+    font-weight: 700;
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border: 0;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: hsl(156, 42%, 18%);
+}
+
+@media screen and (max-width: 616px) {
+    body {
+        height: 100%;
+    }
+
+    .layout {
+        width: 340px;
+    }
+
+    .image-section {
+        height: 240px;
+        width: 350px;
+        background-image: url("images/image-product-mobile.jpg");
+    }
+
+    .description {
+        height: 100%;
+        width: 295px;
+        padding: 20px;
+    }
+
+    #perfume {
+        margin-top: 0;
+    }
+}
